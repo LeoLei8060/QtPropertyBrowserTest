@@ -1,0 +1,44 @@
+QtPropertyEditorView {
+    border: 1px solid #a0a0a0;
+    background-color: #f0f0f0;
+}
+
+QtPropertyEditorView::item {
+    border: none;
+    background-color: #f0f0f0;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* QtPropertyEditorView::branch {
+    background-color: #f0f0f0;
+} */
+
+QtPropertyEditorView::item:selected, QtPropertyEditorView::branch:selected{
+	background-color: #1b84d7;
+    color: black;
+}
+
+
+QtPropertyEditorView QHeaderView::section {
+    background-color: #c0c0c0;
+    border: 1px;
+    color: #292727;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+/* 下面是给父节点展开处贴图片 */
+/* QTreeWidget::branch:closed:has-children:!has-siblings,  
+QTreeWidget::branch:closed:has-children:has-siblings {  
+    border-image: none;  
+    image: url(:/skins/CommonCtrl/resource/List_arrow_close_2x.png);  
+}  
+
+QTreeWidget::branch:open:has-children:!has-siblings,  
+QTreeWidget::branch:open:has-children:has-siblings  {  
+    border-image: none;  
+    image: url(:/skins/CommonCtrl/resource/List_arrow_open_2x.png);  
+}   */
